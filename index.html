@@ -12,6 +12,7 @@
                 border: 1px solid #000;
             }
         </style>
+        
     </head>
     <body>
         <header style="text-align: center;">
@@ -30,7 +31,7 @@
             <section>
                 
                 <img style="width: 50%;" src="https://i1.wp.com/marketbusinessnews.com/wp-content/uploads/2019/07/Social-media-marketing-tool-small-businesses-image-4444.jpg?resize=965%2C691&ssl=1" alt="" align="right">
-                <p> Social media are interactive digitally mediated technologies that facilitate the creation or sharing/exchange of information, ideas,career interests, and other forms of expression via virtual communities and networks.[1][2] While challenges to the definition of social media arise due to the broad variety of stand-alone and built-in social-media services currently available, there are some common features:[2]
+                <p id='col'> Social media are interactive digitally mediated technologies that facilitate the creation or sharing/exchange of information, ideas,career interests, and other forms of expression via virtual communities and networks.[1][2] While challenges to the definition of social media arise due to the broad variety of stand-alone and built-in social-media services currently available, there are some common features:[2]
 
                     Social media are interactive Web 2.0 Internet-based applications.[2][3]
                     User-generated content—such as text posts or comments, digital photos or videos, and data generated through all online interactions—is the lifeblood of social media.[2][3]
@@ -94,5 +95,32 @@
             <a href="https://twitter.com/">twiter</a>
             <a href="https://www.instagram.com/">instagram</a>
         </footer>
+        <script>
+            var myName = 'saleh radwan';
+            document.write(myName);
+            // var mathOper = 12;
+            // alert(mathOper + 6);
+            var mathOper = prompt('Enter your number');
+            if (mathOper >= 0) {
+                alert('you input a positive value');
+            } else if (mathOper < 0) {
+                alert('you input a negative value');
+            } else {
+                alert('Please enter a number');
+            }
+            var txt;
+            var r = confirm("Press a button!");
+            if (r == true) {
+                txt = "You pressed OK!";
+            } else {
+                txt = "You pressed Cancel!";
+            }
+            document.write(mathOper * 5);
+            console.log(mathOper * 5);
+            // change the pargraphe color as user gives 
+            var colorTo = prompt('Enter your color','green');
+            document.getElementById('col').style.color = colorTo;
+        </script>
     </body>
+    
 </html>
