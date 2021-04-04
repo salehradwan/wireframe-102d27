@@ -52,10 +52,10 @@ function repeatImg(param1, param2, param3) {
             document.write('<h1>'+ i++ +'</h1>');
         }else if(param3 == 'ronaldinho'){
             document.write('<img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/07/27/15958346799669.jpg" />');
-            document.write(i++);
+            document.write('<h1>'+ i++ +'</h1>');
         }else {
             document.write('<img src="https://cdn.cnn.com/cnnnext/dam/assets/180503102928-ronaldo-2002-world-cup-exlarge-169.jpg" />');
-            document.write(i++);
+            document.write('<h1>'+ i++ +'</h1>');
         }
         
     }
