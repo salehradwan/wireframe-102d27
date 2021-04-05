@@ -21,9 +21,8 @@
 // }
 // document.write(mathOper * 5);
 // console.log(mathOper * 5);
-// // change the pargraphe color as user gives 
-// var colorTo = prompt('Enter your color','green');
-// document.getElementById('col').style.color = colorTo;
+// change the pargraphe color as user gives 
+
 // var a = 42;
 // var b = '42';
 // if(a > b){
@@ -37,12 +36,15 @@
 // }else {
 //     alert('nothing')
 // }
-
-var footballPlayer = prompt('please enter your favorite player','messi, ronaldinho, ronaldo');
-while(footballPlayer !== 'messi' && footballPlayer !== 'ronaldinho' && footballPlayer !== 'ronaldo'){
-    footballPlayer = prompt('please re-enter your favorite player','messi, ronaldinho, ronaldo');
+function changeColor(idName, colorTo) {
+    document.getElementById(idName).style.color = colorTo;
 }
-var imgNumber = prompt('How many image repeted you need? enter the number');
+function choosePlayer(nameOfPlayer) {
+    while(nameOfPlayer !== 'messi' && nameOfPlayer !== 'ronaldinho' && nameOfPlayer !== 'ronaldo'){
+        nameOfPlayer = prompt('please re-enter your favorite player','messi, ronaldinho, ronaldo');
+    }
+}
+
 
 function repeatImg(param1, param2, param3) {
     var i = 1;
@@ -60,6 +62,10 @@ function repeatImg(param1, param2, param3) {
         
     }
 }
-
+var footballPlayer = prompt('please enter your favorite player','messi, ronaldinho, ronaldo');
+choosePlayer(footballPlayer);
+var imgNumber = prompt('How many image repeted you need? enter the number');
 repeatImg(0, imgNumber, footballPlayer);
+var colorTo = prompt('Enter your color','green');
+changeColor('hugePar', colorTo);
 
