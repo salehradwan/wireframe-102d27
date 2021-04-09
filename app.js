@@ -62,6 +62,7 @@ function repeatImg(param1, param2, param3) {
         
     }
 }
+
 var footballPlayer = prompt('please enter your favorite player','messi, ronaldinho, ronaldo');
 choosePlayer(footballPlayer);
 var imgNumber = prompt('How many image repeted you need? enter the number');
